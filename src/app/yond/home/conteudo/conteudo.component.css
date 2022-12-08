@@ -1,0 +1,82 @@
+@font-face{
+  font-family: inter-bold;
+  src: url('../../fonts/Inter-Bold.ttf');
+}
+@font-face{
+  font-family: bien-regular;
+  src: url('../../fonts/Biennale/Demo_Fonts/Fontspring-DEMO-biennale-bold.otf');
+}
+@font-face{
+  font-family: montserrat;
+  src: url('../../fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  display: flex;
+  justify-content: space-around;
+}
+.conteudo-left {
+  margin-right: -180px;
+  width: 49%;
+}
+h1 {
+  text-align: left;
+  line-height: 80px;
+  letter-spacing: 1px;
+  color: #111827;
+  font-size: 62px;
+  font-weight: bold;
+  font-family: montserrat;
+  margin-top: 100px;
+}
+p {
+  text-align: justify;
+  line-height: 30px !important;
+  word-spacing: 5px;
+  margin-top: 35px;
+  font-size: 20px;
+  line-height: 20px;
+  color: black;
+  font-family: montserrat;
+}
+.button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  font-weight: bold;
+  font-family: montserrat;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border-radius: 10px;
+  height: 60px;
+  width: 380px;
+  background-color: #0000FF;
+  transition: 300ms all ease-in-out;
+  margin-top: 50px;
+  font-size: 26px;
+  border: none;
+}
+a{
+  text-decoration: none;
+}
+.button:hover {
+  background-color: #3f3fff;
+  transform: scale(1.07);
+}
+span{
+  color:#0000FF;
+}
+img{
+  width: 850px;
+  height: 700px;
+  margin-bottom: 40px;
+}
+
+#mbl-content {
+  display: none;
+}

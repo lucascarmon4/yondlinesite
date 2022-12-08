@@ -1,0 +1,151 @@
+@font-face{
+  font-family: inter-bold;
+  src: url('../../../fonts/Inter-Bold.ttf');
+}
+@font-face{
+  font-family: bien-regular;
+  src: url('../../../fonts/Biennale/Demo_Fonts/Fontspring-DEMO-biennale-regular.otf');
+}
+@font-face{
+  font-family: montserrat;
+  src: url('../../../fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+}
+
+mat-icon{
+  color: #FFFF;
+}
+.title {
+  position: relative;
+  height: 40px;
+  margin-top: 30px;
+}
+h1 {
+  margin-left: 20px;
+  line-height: 30px;
+  letter-spacing: .5px;
+  color: #111827;
+  font-size: 50px;
+  font-family: inter-bold;
+}
+
+h1:after {
+  content: '';
+  height: 30px;
+  width: 6px;
+  background-color: #0000FF;
+  position: absolute;
+  left: 0;
+}
+h2 {
+  margin-top: 35px;
+  font-size: 25px;
+  line-height: 40px;
+  color: black;
+  font-family: montserrat;
+  font-weight: 100;
+}
+.img{
+  width: 600px;
+  height: 600px;
+  margin-top: 10px;
+  margin-left: -40px;
+
+}
+
+.servico-left {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.servico-right{
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: 50% 50%;
+  row-gap: 17px;
+  column-gap: 200px;
+  padding-top: 10px;
+
+}
+
+.icon{
+  max-width: 50px;
+}
+h3{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  position: relative;
+  font-family: inter-bold;
+  font-size: 37px;
+}
+p {
+  word-spacing: 0,2px;
+  text-align: unset;
+  font-size: 23px;
+  line-height: 35px !important;
+  letter-spacing: 1.5px;
+  font-family: bien-regular;
+  margin-top: 20px;
+
+}
+
+.h3Blue:after {
+  content: '';
+  width: 126px;
+  position: absolute;
+  height: 6px;
+  bottom: -30px;
+  left: 0;
+  background-color: #0000FF;
+}
+.h3Black:after {
+  content: '';
+  width: 126px;
+  position: absolute;
+  height: 6px;
+  bottom: -30px;
+  left: 0;
+  background-color: black;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+}
+.circle{
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  background-color: #0000FF;
+  transition: 500ms all ease;
+  box-shadow: 0px 0px 6px #4949f7;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle:hover {
+  box-shadow: 0px 0px 14px #4949f7;
+}
+
+.circleBlack{
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  background-color: black;
+  transition: 500ms all ease;
+  box-shadow: 0px 0px 6px #2f2f35;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.circleBlack:hover {
+  box-shadow: 0px 0px 14px #2f2f35;
+}

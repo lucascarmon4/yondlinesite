@@ -1,0 +1,23 @@
+<section id="header">
+    <img src="../assets/logo.png">
+    <div (click)="onMobileChange()" class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    <nav>
+        <ul>
+            <li (click)="closeClick()"><a href="#" class="li-a">Home</a></li>
+            <li (click)="closeClick()"><a href="#servico" class="li-a">Serviços</a></li>
+            <li (click)="closeClick()"><a href="#projetos" class="li-a">Portfolio</a></li>
+            <li (click)="closeClick()"><a href="#sobre" class="li-a">Sobre</a></li>
+
+            <li (click)="closeClick()" class="headerBtnContato"><a href="#" class="cttA">Contato</a></li>
+        </ul>
+    </nav>
+</section>
+<app-conteudo></app-conteudo>
+<app-servico></app-servico>
+<app-projetos></app-projetos>
+<app-sobre></app-sobre>
+<app-footer></app-footer>

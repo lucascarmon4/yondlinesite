@@ -1,0 +1,51 @@
+section{
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+h1 {
+  margin-left: 80px;
+  line-height: 30px;
+  letter-spacing: .5px;
+  color: #111827;
+  font-size: 50px;
+  font-family: inter-bold;
+}
+.title {
+  position: relative;
+  height: 40px;
+  margin-bottom: 30px;
+
+}
+h1:after {
+  content: '';
+  height: 30px;
+  width: 6px;
+  background-color: #0000FF;
+  position: absolute;
+  left: 0;
+  margin-left: 60px;
+}
+
+.sobre-content{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+img{
+  width: 800;
+  height: 600px;
+  margin-left: 10px;
+}
+
+.right {
+  width: 40%;
+}
+
+p {
+  text-align: justify;
+  font-size: 30px;
+  line-height: 50px !important;
+  margin-bottom: 50px;
+}

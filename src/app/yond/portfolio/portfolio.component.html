@@ -1,0 +1,108 @@
+<section id="header">
+  <img src="../assets/logo.png">
+  <div (click)="onMobileChange()" class="mobile-menu">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+  </div>
+  <nav>
+      <ul>
+          <li (click)="closeClick()"><a href="#" class="li-a">Home</a></li>
+          <li (click)="closeClick()"><a href="#servico" class="li-a">Serviços</a></li>
+          <li (click)="closeClick()"><a href="#projetos" class="li-a">Portfolio</a></li>
+          <li (click)="closeClick()"><a href="#sobre" class="li-a">Sobre</a></li>
+
+          <li (click)="closeClick()" class="headerBtnContato"><a href="#" class="cttA">Contato</a></li>
+      </ul>
+  </nav>
+</section>
+
+<div class="square">
+  <div class="title"><h1 class="titulo">Projetos</h1></div>
+  <div class="select">
+    <select (change)="onSelectChange($event)" name="filtro" id="">
+      <option value="default">Filtrar</option>
+      <option value="site">WebSite</option>
+      <option value="design">Design</option>
+      <option value="video">Edição de vídeo</option>
+    </select>
+</div>
+</div>
+
+
+
+<div class="card">
+  <mat-card class="example-card" data-type="design">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Shiba Inu</mat-card-title>
+      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+    </mat-card-header>
+    <img class="card-img" mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+  </mat-card>
+
+  <mat-card class="example-card" data-type="site">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Shiba Inu</mat-card-title>
+      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+    </mat-card-header>
+    <img class="card-img" mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+  </mat-card>
+
+  <mat-card class="example-card" data-type="video">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Shiba Inu</mat-card-title>
+      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+    </mat-card-header>
+    <img class="card-img" mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+  </mat-card>
+  <mat-card class="example-card" data-type="video">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Shiba Inu</mat-card-title>
+      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+    </mat-card-header>
+    <img class="card-img" mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+  </mat-card>
+
+  <mat-card class="example-card" data-type="site">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Shiba Inu</mat-card-title>
+      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+    </mat-card-header>
+    <img class="card-img" mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+  </mat-card>
+
+  <mat-card class="example-card" data-type="design">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Shiba Inu</mat-card-title>
+      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+    </mat-card-header>
+    <img class="card-img" mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+  </mat-card>
+</div>
+
+<section id="footer">
+  <div class="content">
+    <div class="left">
+      <div class="left-content">
+        <img class="footer-img" src="../../../assets/footer.png" alt="Logo YondLine">
+        <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quia numquam maxime aliquid fugiat saepe, quo quos accusantium laudantium cumque rerum corrupti voluptate tempora obcaecati corporis id veniam, error placeat.</p>
+      </div>
+    </div>
+    <div class="right">
+      <div class="contact">
+        <h2>CONTATO</h2>
+        <a href="" class=""><p class="footer-contact">@yondline</p></a>
+        <a href="" class=""><p class="footer-contact">(13) 99625-1308</p></a>
+        <a href="" class=""><p class="footer-contact">yondline@gmail.com</p></a>
+        <img class="footerMbl-img" src="../../../assets/footer.png" alt="Logo YondLine">
+      </div>
+    </div>   
+  </div>
+  <div class="copy">Todos os direitos reservados &copy; 2022</div>
+</section>

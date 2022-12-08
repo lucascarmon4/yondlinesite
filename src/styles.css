@@ -1,0 +1,315 @@
+/* You can add global styles to this file, and also import other style files */
+*::selection {
+    background-color: #0000FF;
+    color: white;
+}
+
+html, body { height: 100%;  }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #FFFF; }
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 1800px) {
+  #content h1 {
+    line-height: 70px;
+    letter-spacing: 0.6px;
+    font-size: 50px;
+  }
+  #content p {
+    line-height: 20px;
+    font-size: 18px;
+  }
+  #content img {
+    width: 700px;
+    height: 600px;
+    margin-left: 30px;
+  }
+  #content .button { 
+    margin-top: 50px;
+    height: 50px;
+    width: 340px;
+  }
+  #servico h1 { 
+    font-size: 45px;
+    margin-top: 0;
+  }
+  #servico h2 {
+    font-size: 20px;
+  }
+  #servico h3 {
+    font-size: 30px;
+  }
+  #servico p { 
+    font-size: 18px;
+  }
+  #servico .servico-right {
+    column-gap: 120px;
+  }
+  #servico .circle , #servico .circleBlack {
+    width: 76px;
+    height: 76px;
+  }
+  #projects h1 {
+    font-size: 45px;
+  }
+  #projects button {
+    width: 180px;
+    margin-right: 8px;
+  }
+  #sobre h1 {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 1400px) {
+  #mbl-content {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+  }
+  #content {
+    display: none;
+  }
+  #mbl-content .conteudo {
+    width: 80%;
+  }
+  #mbl-content h1 {
+    line-height: 45px;
+    margin: 0;
+    line-height: normal;
+    font-size: 40px;
+    text-align: center;
+  }
+  #mbl-content p {
+    line-height: 20px;
+    font-size: 18px;
+  }
+  #mbl-content img {
+    margin: 0;
+    width: 710px;
+    height: 610px;
+  }
+  #servico {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #servico h1:after {
+    left: 50px;
+  }
+  #servico .img{
+    display: none;
+  }
+  #servico .card {
+    display: flex;
+    align-items: center;
+  }
+  #servico .card h3 {
+    margin: 20px 0 40px 0;
+  }
+  #servico h3::after {
+    width: 100px;
+    left: calc(50% - 50px);
+  }
+  #projects {
+    align-items: center;
+    justify-content: space-around;
+  }
+  #projects h1 {
+    margin: 0;
+  }
+  #projects h1::after {
+    left: -80px;
+  }
+  #sobre {
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+  #sobre .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    width: 260px;
+  }
+  #sobre h1 {
+    margin: 0;
+  }
+  #sobre h1::after {
+    margin: 0;
+  }
+  #sobre img {
+    margin: 0;
+    width: 600px;
+    height: inherit;
+  }
+  #sobre .sobre-content{
+    flex-direction: column;
+  }
+  #sobre .sobre-content .right {
+    width: 80%;
+  }
+  #sobre .sobre-content p {
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 950px) {
+  #mbl-content h1 {
+    font-size: 28px;
+    margin: 10px 0;
+  }
+  #mbl-content img {
+    width: 500px;
+    height: inherit;
+  }
+  #mbl-content p {
+    font-size: 15px;
+    word-spacing: normal;
+    text-align: center;
+  }
+  #mbl-content .button {
+    margin-top: 20px;
+    font-size: 20px;
+    width: 300px;
+    height: 50px;
+  }
+  #servico h1 { 
+    margin: 0;
+    font-size: 35px;
+  }
+  #servico h1::after {
+    left: 85px;
+    top: 3px;
+    height: 25px;
+  }
+  #servico h2 {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  #servico .servico-right {
+    column-gap: 30px;
+  }
+  #servico .card h3 {
+    margin: 10px 0 10px 0 ;
+    font-size: 20px;
+  }
+  #servico .card h3::after {
+    bottom: -20px;
+  }
+  #servico .card p {
+    font-size: 15px;
+  }
+  #projects h1 {
+    font-size: 35px;
+  }
+  #projects h1::after {
+    left: -78px;
+    top: 3px;
+    height: 25px;
+  }
+  #sobre h1 {
+    font-size: 35px;
+  }
+  #sobre h1::after {
+    left: 25px;
+    height: 25px;
+    top: 28px;
+  }
+  #sobre img {
+    width: 500px;
+  }
+  #sobre .sobre-content p {
+    font-size: 20px;
+    line-height: 45px !important;
+  }
+}
+
+@media (max-width: 650px) {
+  #mbl-content img {
+    width: 370px;
+  }
+  #mbl-content .button {
+    width: 250px;
+    height: 45px;
+    font-size: 18px;
+  }
+  #servico {
+    margin-top: 35px;
+  }
+  #servico h2 {
+    line-height: 30px;
+    font-size: 15px;
+  }
+  #servico .servico-left {
+    width: 100%;
+    align-items: center;
+  }
+  #servico .servico-left .title{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 300px;
+  }
+  #servico .servico-left h1::after {
+    left: -9px;
+    height: 25px;
+    top: 8px;
+  }
+  #servico .servico-right {
+    grid-template-columns: 70%;
+    grid-template-rows: auto;
+    place-content: center;
+  }
+  #servico .blueMbl {
+    background-color: #0000FF;
+    box-shadow: 0px 0px 6px #4949f7;
+  }
+  #servico .blueMblh3::after {
+    background-color: #0000FF;
+  }
+  #servico .blackMbl {
+    background-color: black;
+    box-shadow: 0px 0px 6px #2f2f35;
+  }
+  #servico .blackMblh3::after {
+    background-color: black;
+  }
+  #projects {
+    margin-top: 35px !important;
+  }
+  #projects .card {
+    flex-direction: column;
+  }
+  #projects .mat-card {
+    margin: 10px 0;
+    width: 70%;
+  }
+  #projects button {
+    position: initial;
+    margin: 20px 0;
+  }
+  #sobre {
+    margin-top: 35px;
+  }
+  #sobre img {
+    width: 370px;
+  }
+  #footer .text {
+    width: 90%;
+    margin-left: 10px;
+  }
+  #footer .footer-img {
+    display: none;
+  }
+  #footer .footerMbl-img {
+    display: block !important;
+  }
+}
